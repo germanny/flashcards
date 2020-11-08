@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+  section.namecard
+    .namecard-hello
+      p.namecard-greeting Hello, student!
+    form.namecard-form(action='', method='post')
+      label(for="username").namecard-prompt Please enter your name:
+      input.namecard-name(type='text', name='username', id='username')
+      button.namecard-submit(type='submit') Submit
